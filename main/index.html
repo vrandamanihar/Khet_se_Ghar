@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="box"></div>
+  <!-- <div class="container"> -->
+    //<div class="form-container sign-in-container">
+      <form action="login.php" method="POST" id="loginForm" onsubmit="validateLoginForm()">
+        <h2>Login</h2>
+        <span>Enter Username:</span>
+        <input type="text" id="loginUsername" placeholder="Username" required><br><br>
+        <span>Enter Password:</span>
+        <input type="password" id="loginPassword" placeholder="Password" required><br><br>
+        <div id="view">
+          <button type="submit"><a href="sign.html">Login</a></button>
+        </div>
+        
+        
+      
+      <p>Didn't have an account?  <a href="sign.html">Sign up</a></p>
+    </div>
+  </form>
+
+    
+  <script src="script.js"></script>
+</body>
+</html>
