@@ -26,6 +26,15 @@
 .border{
     border: 1.5px solid transparent;
 }
+.khet{
+    color: #09651f;
+    font-size:xx-large;
+    font-weight: 700;
+    /* margin-right: 200px; */
+    text-decoration: solid;
+    padding: left 50px;
+    margin-left:0px;
+}
 .border:hover{
     border: 1.5px solid white;
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ka.css">
+</head>
+<body>
+    <div class="form-container sign-up-container">
+      <form action="signUpPage.php" method="POST" id="signupForm" onsubmit="validateSignupForm()">
+        <h2>Sign Up</h2>
+        <span>Enter Username:</span>
+        <input type="text" id="signupUsername" placeholder="Username" required><br><br>
+        <span>Enter Email-Id:</span>
+        <input type="email" id="signupEmail" placeholder="Email" required><br><br>
+        <span>Enter Password:</span>
+        <input type="password" id="signupPassword" placeholder="Password" required><br><br>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
