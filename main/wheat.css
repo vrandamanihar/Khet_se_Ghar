@@ -167,15 +167,15 @@ span{
 
 .shop-section button{
     color: rgb(11, 10, 10);
-    background-color:orange;
+    background-color:deepskyblue;
     /* margin-top: 150px; */
     font-size: 16 px;
     padding: 10px 20px;
     display: inline-block;
-    margin-left: 50%;
+    margin-left:30%;
 }
 .shop-section Quantity{
-    background-color: orange;
+    background-color:deepskyblue;
     color: #0f1111;
 }
 span{
@@ -191,8 +191,14 @@ span{
     padding: 20px 0px 15px;
     margin-top: 15px;
     margin-bottom: 15px;
+    border: 2px solid black;
+
     
 }
+/* .pk{
+    width: 50px;
+    margin-top: 0px;
+} */
 .box-image{
     height: 280px;
     background-size: cover;

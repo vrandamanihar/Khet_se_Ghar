@@ -1,16 +1,32 @@
-CREATE DATABASE IF NOT EXISTS khet_se_ghar;
-USE khet_se_ghar;
-CREATE TABLE IF NOT EXISTS loginPage (
+-- Create users table
+CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
-);
-INSERT INTO loginPage (username, password) VALUES
-('user1', 'password1'),
-('user2', 'password2');
-CREATE TABLE IF NOT EXISTS signUpPage (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
+    username VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create equipment table
+CREATE TABLE equipment (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    available BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create bookings table
+CREATE TABLE bookings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    equipment_id INT NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    pickup_location VARCHAR(100),
+    status ENUM('pending', 'confirmed', 'cancelled') DEFAULT 'pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (equipment_id) REFERENCES equipment(id)
 );

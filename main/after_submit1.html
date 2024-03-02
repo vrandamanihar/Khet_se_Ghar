@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Form</title>
+    <link rel="stylesheet" href="after_submit1.css">
+</head>
+<body>
+    <h2>Equipment Renting Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div>
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div>
+            <label for="email">E-Mail Address*</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="equipmentName">Equipment Name*</label>
+            <input type="text" id="equipmentName" name="equipmentName" required>
+        </div>
+        <div>
+            <label for="equipmentCategory">Equipment Category*</label>
+            <select id="equipmentCategory" name="equipmentCategory" required>
+                <option value="" disabled selected>Select Equipment Category</option>
+                <option value="sell">Sell</option>
+                <option value="rentOut">Rent Out</option>
+                <option value="sellOrRentOut">Sell Or Rent Out</option>
+            </select>
+        </div>
+        <div>
+            <label for="region">Select Region*</label>
+            <select id="region" name="region" required>
+                <option value="" disabled selected>Please Select</option>
+                <option value="region1">Region 1</option>
+                <option value="region2">Region 2</option>
+                <!-- Add more regions as needed -->
+            </select>
+        </div>
+        <div>
+            <label for="modelNumber">Model Number*</label>
+            <input type="text" id="modelNumber" name="modelNumber" required>
+        </div>
+        <div>
+            <label for="manufactureYear">Year Of Manufacture*</label>
+            <input type="number" id="manufactureYear" name="manufactureYear" required>
+        </div>
+        <div>
+            <label for="parkingLocation">Equipment Parking Location*</label>
+            <input type="text" id="parkingLocation" name="parkingLocation" required>
+        </div>
+        <div>
+            <label for="workingHours">No. Of Working Hours Completed</label>
+            <input type="number" id="workingHours" name="workingHours">
+        </div>
+        <div>
+            <label for="rentalValue">Rental Value</label>
+            <input type="number" id="rentalValue" name="rentalValue">
+        </div>
+        <div>
+            <label for="resaleValue">Resale Value</label>
+            <input type="number" id="resaleValue" name="resaleValue">
+        </div>
+        <div>
+            <label for="shortDescription">Equipment Short Description*</label>
+            <textarea id="shortDescription" name="shortDescription" maxlength="80" required></textarea>
+            <p>(You have <span id="remainingChars">80</span> characters left.)</p>
+        </div>
+        <div>
+            <label for="description">Equipment Description</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        <div>
+            <label for="registrationCertificate">Registration Certificate Available*</label><br>
+            <div class="yn"><input type="radio" id="registrationCertificateYes" name="registrationCertificate" value="yes">
+            <label for="registrationCertificateYes">Yes</label>
+            <input type="radio" id="registrationCertificateNo" name="registrationCertificate" value="no">
+            <label for="registrationCertificateNo">No</label></div>
+        </div>
+        <div>
+            <label for="insurance">Insurance Available</label><br>
+            <div class="yn"><input type="radio" id="insuranceYes" name="insurance" value="yes">
+            <label for="insuranceYes">Yes</label>
+            <input type="radio"id="insuranceNo" name="insurance" value="no">
+            <label for="insuranceNo">No</label></div>
+        </div>
+        <div>
+            <label for="invoice">Upload Invoice</label>
+            <input type="file" id="invoice" name="invoice">
+        </div>
+        <div>
+            <label for="image1">Upload Equipment Image 1</label>
+            <input type="file" id="image1" name="image1">
+        </div>
+        <div>
+            <label for="image2">Upload Equipment Image 2</label>
+            <input type="file" id="image2" name="image2">
+        </div>
+        <div>
+            <label for="image3">Upload Equipment Image 3</label>
+            <input type="file" id="image3" name="image3">
+        </div>
+        <div>
+            <label for="image4">Upload Equipment Image 4</label>
+            <input type="file" id="image4" name="image4">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById('shortDescription').addEventListener('input', function() {
+            var maxLength = 80;
+            var currentLength = this.value.length;
+            var remainingLength = maxLength - currentLength;
+            document.getElementById('remainingChars').innerText = remainingLength;
+        });
+    </script>
+</body>
+</html>

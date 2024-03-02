@@ -1,0 +1,77 @@
+body{
+    background-image:url('background.jpeg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* opacity: 0.3; */
+    margin: 90px 300px 90px 600px;
+
+}
+/* #startButton{
+    font-size: 50px;
+    color: black;
+    background-color:rgb(149, 240, 108);
+}
+#Button{
+    font-size: 40px;
+    /* width: 140px; */
+    /* color: black;
+    background-color: cadetblue;
+   margin-top: 360px;
+    margin-left:0px; 
+   margin-right: 0px;
+    */
+
+    #startButton {
+        font-size: 50px;
+        color: white; /* Changed text color to white for better contrast */
+        background-color: rgb(149, 240, 108);
+        padding: 15px 30px; /* Added padding for a more comfortable look */
+        border: none;
+        border-radius: 10px; /* Rounded corners for a softer appearance */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 150px;
+         /* Smooth transition for hover effect */
+         
+    }
+    
+    #startButton:hover {
+        background-color: rgb(120, 200, 80); /* Darker shade on hover */
+    }
+    
+    #Button {
+        font-size: 40px;
+        color: white; /* Changed text color to white for better contrast */
+        background-color: cadetblue;
+        padding: 15px 25px; /* Added padding for a more comfortable look */
+        margin-top: 200px; /* Adjusted margin for spacing */
+        border: none;
+        border-radius: 8px; /* Rounded corners for a softer appearance */
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect and box shadow */
+        margin-right: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle box shadow for depth */
+        margin-left: 60px;
+        
+    }
+    
+    #Button:hover {
+        background-color: #4b8c8e; /* Darker shade on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+    }
+     pre{
+        font-size: 40px;
+        color: darkolivegreen;
+        margin-top: 0px;
+    }
+    /* .period{
+        font-size: 60px;
+       margin-right:300px; 
+       margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        align-items:center
+    
+    } 
+     */

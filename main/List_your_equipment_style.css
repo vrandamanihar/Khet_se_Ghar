@@ -1,0 +1,25 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+button{
+    background-color: rgb(15, 15, 77);
+}
+.but{
+    color: white;
+    text-decoration: none;
+}

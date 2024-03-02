@@ -168,6 +168,8 @@ span{
     text-decoration: none;
     text-align: center;
 }
+
+
 .box{
     height: 350px;
     /* border: 2px solid black; */
@@ -175,12 +177,16 @@ span{
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
+    border: 2px solid black;
 }
 .box-image{
     height: 280px;
     background-size: cover;
     margin: 1rem 0rem 1rem;
     background-repeat: no-repeat;
+}
+.box-img:hover{
+    opacity: 0.5;
 }
 .box-content{
     margin: 0px 10px 2px 10px;
