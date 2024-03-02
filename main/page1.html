@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text Converter</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <!-- <h1>Speech-to-Text Converter</h1> -->
+     <!-- <div class="period"><pre>आपका हमारे पोर्टल खेत से घर में स्वागत है</pre></div>  -->
+    <!-- <button id="startButton">यहाँ दबाएँ</button>
+    <p id="output"></p> -->
+
+    <audio id="audio" src="WhatsApp Audio 2024-03-02 at 9.05.59 AM.mpeg" preload="auto"></audio>
+    <button id="Button">आगे बढे</button>
+    <div class="wrap">
+        <button class="button">यहाँ दबाएँ</button>
+      </div>
+
+    <script>
+        const startButton = document.getElementById('startButton');
+        const outputElement = document.getElementById('output');
+        const audio = document.getElementById('audio');
+
+        // Check if the browser supports the Web Speech API
+        if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+
+            // Set continuous to true for continuous speech recognition
+            recognition.continuous = true;
+
+            recognition.onstart = () => {
+                outputElement.textContent = 'Listening...';
+            };
+
+            recognition.onresult = (event) => {
+                const result = event.results[event.resultIndex];
+                const transcript = result[0].transcript;
+                outputElement.textContent = transcript;
+            };
+
+            recognition.onerror = (event) => {
+                outputElement.textContent = 'Error occurred: ' + event.error;
+            };
+
+            recognition.onend = () => {
+                outputElement.textContent = 'Speech recognition ended.';
+            };
+
+            startButton.addEventListener('click', () => {
+                audio.play().then(() => {
+                    recognition.start();
+                }).catch((error) => {
+                    console.error('Error playing audio:', error);
+                });
+            });
+        } else {
+            outputElement.textContent = 'Speech recognition is not supported in this browser.';
+        }
+    </script>
+</body>
+</html>

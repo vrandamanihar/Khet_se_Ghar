@@ -237,6 +237,7 @@ margin-left: 15px;
     background-color: white;
     padding:20px 0px 15px;
     margin-top: 15px;
+    border: 2px solid black;
 }
 .box-img{
     height: 300px;
@@ -255,16 +256,16 @@ margin-left: 15px;
     transition: height 0.7s ease-in-out;
     
 }
-.box-content:hover{
+/* .box-content:hover{
     
     height: 80%;
     width: 100%;
 
-} 
+}  */
 
-.box-img:hover{
+/* .box-img:hover{
     height: 110%;
-}
+} */
 
 .box-content p{
      color:#007185;

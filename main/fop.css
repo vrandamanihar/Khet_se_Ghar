@@ -1,0 +1,84 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Basic styling for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically */
+}
+
+/* Donation box container */
+.donation-box {
+    max-width: 600px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; /* Center text content */
+}
+
+/* Row 1 - Donation title */
+#row1 {
+    margin-bottom: 30px; /* Add margin at the bottom for spacing */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: row; /* Align form items in a column */
+    align-items: flex-start; /* Align form items to the left */
+    margin-top: 20px;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+/* Donation title styling */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Add margin below the title */
+}
+
+/* Donation options and custom amount input styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="number"] {
+    margin-right: 5px;
+}
+
+/* Middle text styling */
+.middle-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Thank you message styling */
+.thank-you {
+    font-size: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .donation-box {
+        max-width: 90%;
+    }
+}
+.donation-box2 {
+    margin-left:25%;
+    text-align: center; /* Center text content */
+}

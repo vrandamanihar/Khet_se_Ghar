@@ -190,6 +190,7 @@ span{
     padding: 20px 0px 15px;
     margin-top: 15px;
     margin-bottom: 15px;
+    border: 2px solid black;
     
 }
 .box-image{
@@ -275,4 +276,7 @@ ul a:hover{
 }
 .pages p{
     display: inline;
+}
+.box4 box{
+    border: 2px solid black;
 }
