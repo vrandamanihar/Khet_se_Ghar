@@ -150,12 +150,14 @@ span{
 display: inline;
 margin-left: 15px;
 }
-.panel-ops pre{
+.panel-ops {
     display: inline;
     /* margin-right:20px; */
     color: #dddddd;
     text-decoration: none;
     font-size:large;
+    
+     
     }
     .panel-ops a{
         
@@ -163,12 +165,7 @@ margin-left: 15px;
         text-decoration: none;
         font-size:large;
     }
-    .panel-ops a:hover{
-        /* transition: font size 2s ease-in-out 0.2s ; */
-        color: rgb(206, 73, 95);
-        font-size: 25px;
-        transition: font-size 0.5s ease-in-out;
-    }
+    
  
 .panel-ops{
     width:70%;
@@ -334,4 +331,27 @@ ul a{
 }
 .copyright{
     padding-top: 25px; 
+}
+
+.panel-ops{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around;
+}
+
+#link1:hover{
+    color: rgb(206, 73, 95);
+    scale: 1.1;
+    transition:  0.5s ease-in-out;
+}
+#link2:hover{
+    color: rgb(206, 73, 95);
+    scale: 1.1;
+    transition:  0.5s ease-in-out;
+}
+#link3:hover{
+    color: rgb(206, 73, 95);
+    scale: 1.1;
+    transition:  0.5s ease-in-out;
 }
